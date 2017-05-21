@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users
+
   get 'home/index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -15,6 +16,7 @@ Rails.application.routes.draw do
   get 'list/show6'
   get 'list/show7'
   get 'list/show8'
+  get 'mypage/index'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

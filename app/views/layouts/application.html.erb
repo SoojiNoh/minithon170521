@@ -64,9 +64,18 @@
 <i class="fa fa-share my-float"></i>
 </a>
   <ul>
-  <li><a href="#">
-  <i class="fa fa-facebook my-float"></i>
-  </a></li>
+    <% if user_signed_in? %>
+        <li><a href="mypage/index">
+          <i class="fa fa-facebook my-float"></i>
+        </a>
+    <% end %>
+    <% if user_signed_in? %>
+    <% else %>
+        <li><a href="/users/sign_in">
+          <i class="fa fa-facebook my-float"></i>
+        </a>
+    <% end %>
+ </li>
   <li><a href="#">
   <i class="fa fa-google-plus my-float"></i>
   </a></li>
