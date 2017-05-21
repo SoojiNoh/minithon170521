@@ -8,6 +8,13 @@ Rails.application.routes.draw do
   root 'home#index'
   get 'list/index'
   get 'list/show'
+  get 'list/show2'
+  get 'list/show3'
+  get 'list/show4'
+  get 'list/show5'
+  get 'list/show6'
+  get 'list/show7'
+  get 'list/show8'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
